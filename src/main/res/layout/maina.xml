@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:paddingTop="0dp"
+    tools:context="com.example.myxx.MainA">
+
+
+
+    <Button
+        android:visibility="gone"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="Get Image"
+        android:id="@+id/id_getImage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/id_detect" />
+
+
+         />
+
+    <Button
+        android:text="换方式拍"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/customCamera"
+        android:visibility="invisible"
+        android:onClick="customCamera"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnvdio"
+        android:layout_alignEnd="@+id/btnvdio"
+        android:layout_toEndOf="@+id/startCamera"
+        android:layout_toRightOf="@+id/startCamera"
+        android:layout_below="@+id/button" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tip"
+        android:text="eee"
+        android:gravity="center"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/id_detect"
+        android:layout_toStartOf="@+id/id_detect" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnvdio"
+        android:visibility="invisible"
+        android:text="重新练习"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_toRightOf="@+id/startCamera"
+        android:layout_toEndOf="@+id/startCamera" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+android:visibility="invisible"
+        android:text="换方式练习"
+        android:layout_above="@+id/startCamera"
+        android:layout_alignParentStart="true" />
+
+
+
+
+    <ImageView
+        android:id="@+id/dd"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#1a5398"/>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/ts"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="#ffffffff"
+        android:text="通过视频学习，想必你已经掌握了微笑的技巧，下面请拍摄四张照片。Go On！"/>
+
+    <ImageView
+
+        android:layout_width="800dp"
+        android:layout_height="1600dp"
+        android:id="@+id/id_photo"
+        android:gravity="top"
+        android:src="@mipmap/guide_image3"
+        tools:ignore="RtlHardcoded"
+        android:layout_below="@+id/dd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+    <Button
+        android:layout_width="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="85dp"
+        android:background="@mipmap/scores"
+        android:enabled="false"
+        android:id="@+id/id_detect"/>
+    <Button
+        android:background="@mipmap/capture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/startCamera"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="10dp"
+       />
+    <Button
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:id="@+id/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/next"
+        android:layout_alignStart="@+id/id_detect"
+        android:visibility="invisible"
+
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/id_waitting">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_age_and_gender"
+            android:drawableLeft="@drawable/male"
+            android:text="123"
+            android:background="@drawable/hint"
+            android:visibility="invisible"
+            android:textColor="#ffff00ff"
+            android:textSize="22sp"
+            android:gravity="center"/>
+    </FrameLayout>
+</RelativeLayout>

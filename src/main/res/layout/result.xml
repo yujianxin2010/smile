@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="#1a5398"
+
+    android:paddingTop="0dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@mipmap/r1"
+        android:id="@+id/top"
+        />
+<ImageView
+    android:layout_below="@id/top"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:id="@+id/ima1"
+    android:layout_marginLeft="30dp"/>
+
+    <ImageView
+
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ima3"
+        android:layout_below="@id/top"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ima2"
+        android:layout_below="@+id/ima1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/ima4"
+        android:layout_alignTop="@+id/ima2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/btn"
+        android:text="评分A:祝贺你已经拥有了足够自信与迷人的微笑，我相信在你的职业道路上势必会少去很多荆棘与坎坷。微笑，是来自你内心最强大的力量，有它相伴，前路光明。希望你保持你的微笑，于己于人！
+"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/btn1"
+        android:text="评分B:在大多数的时候，你是阳光开朗的，这是我从你的微笑中寻找到的答案。这样很好，我相信你是一个善于创造快乐与温暖的职场正能量源。不过，你也会有你的不开心，你也会有你的不顺利，每当这时，更应该将微笑常挂嘴边，不是吗？
+"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/btn2"
+        android:text="评分C:你是一个冷酷的人，你不常笑，更很少微笑。但你绝对是一个内心温暖的人，因为你偶尔流露出的笑容是那么让人感动，那么让人贴心。别再封闭自己了，微笑不仅是自己内心的强大力量，它更是人与人之间交流的桥梁。我相信这一点在职场特别有用。
+"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/btn3"
+        android:text="评分D:微笑，不仅仅是让别人感到舒心和温暖，更重要的是会带给自己力量与动力。而不会微笑的人，总是带有或多或少的悲观情绪，这样的人在职场上，做事情不一定会不顺，可人际交往大概会屡屡受挫。笑一笑吧，动一动嘴角，你会发现即便寒冬，又有何惧？
+"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button11"
+       android:background="@mipmap/restart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

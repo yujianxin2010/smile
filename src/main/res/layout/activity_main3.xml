@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.myxx.MainActivity3">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/id_waitting">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_age_and_gender"
+            android:drawableLeft="@drawable/male"
+            android:text="123"
+            android:background="@drawable/hint"
+            android:visibility="invisible"
+            android:textColor="#ffff00ff"
+            android:textSize="22sp"
+            android:gravity="center"/>
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:visibility="invisible"
+        android:text="shuchu"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tip"
+        android:text="eee"
+        android:gravity="center"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/id_detect" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="打分"
+
+        android:id="@+id/id_detect"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="下一步"
+        android:layout_width="140dp"
+        android:visibility="invisible"
+        android:layout_height="140dp"
+        android:id="@+id/button10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="800dp"
+        android:id="@+id/id_photo"
+        android:gravity="top"
+        android:src="@drawable/t4"
+        tools:ignore="RtlHardcoded"
+        android:layout_above="@+id/id_tip"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
